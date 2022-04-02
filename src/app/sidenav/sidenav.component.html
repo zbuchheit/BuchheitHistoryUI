@@ -1,0 +1,36 @@
+<mat-sidenav-container class="sidenavContainer" autosize>
+  <mat-sidenav #sidenavLeft opened mode="side" position="start">
+    <mat-accordion>
+      <div class="sidenav__link-row">
+        <mat-expansion-panel *ngFor="let item of sideNavTitles">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ item.title }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list-item>
+            <div *ngFor="let value of item.subtitles">
+             <a href routerLink="{{item.title}}/{{value}}">
+               {{value}}
+              </a>
+            </div>
+          </mat-list-item>
+        </mat-expansion-panel>
+      </div>
+    </mat-accordion>
+    </mat-sidenav>
+
+  <mat-sidenav #sidenavRight class="sideNav__right" opened="true" position="end" mode="side">
+  <app-family-search></app-family-search>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="sideNav__content">
+    <div class="button__container" align="right">
+      <button type="button" mat-button (click)="sidenavRight.toggle(); sideNavToggle();">
+        <mat-icon *ngIf="!sideNavSelected">chevron_left</mat-icon>
+        <mat-icon *ngIf="sideNavSelected">chevron_right</mat-icon>
+      </button>
+    </div>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

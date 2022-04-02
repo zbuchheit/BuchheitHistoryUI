@@ -1,0 +1,93 @@
+<div class="container">
+
+    <div class= "input__container">
+
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="Ex. John" >
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Middle Name</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last [Maiden] Name</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-radio-group aria-label="Select Sex Option">
+      <mat-label>Sex</mat-label>
+      <mat-radio-button value="M">Male</mat-radio-button>
+      <mat-radio-button value="F">Female</mat-radio-button>
+    </mat-radio-group>
+
+
+    <mat-form-field>
+    <mat-label>Birthdate</mat-label>
+    <input matInput [matDatepicker]="birthPicker">
+    <mat-datepicker-toggle matSuffix [for]="birthPicker"></mat-datepicker-toggle>
+    <mat-datepicker #birthPicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Birthplace</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Deathdate</mat-label>
+      <input matInput [matDatepicker]="deathPicker">
+      <mat-datepicker-toggle matSuffix [for]="deathPicker"></mat-datepicker-toggle>
+      <mat-datepicker #deathPicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Deathplace</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Father First Name</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Father Middle Name</mat-label>
+      <input matInput placeholder="Ex. Buchheit" >
+      </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Father Last Name</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Mother First Name</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-form-field>
+    <mat-label>Mother Middle Name</mat-label>
+    <input matInput placeholder="Ex. Buchheit" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Mother Last Name</mat-label>
+      <input matInput placeholder="Ex. Buchheit" >
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Mother Maiden Name</mat-label>
+        <input matInput placeholder="Ex. Buchheit" >
+        </mat-form-field>
+
+</div>
+
+<div class = "search_button__container">
+  <button mat-flat-button color="primary"
+   type='submit'>Submit</button>
+</div>
+
+</div>

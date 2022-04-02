@@ -1,0 +1,23 @@
+mat-toolbar {
+background: url(/assets/images/bkg-header.jpg);
+background-size: contain;
+height: 15vh;
+width: 100%;
+vertical-align: top;
+color: white;
+position: relative
+}
+.footer__img-logo {
+  width: 20rem;
+  height: 100%
+}
+.header__button-row{
+  margin-right: 0;
+  position:absolute; right:0
+}
+.mat-flat-button{
+  margin-left: 1rem;
+  background-color: #145501;
+  font-size: 16px;
+  color:white
+}

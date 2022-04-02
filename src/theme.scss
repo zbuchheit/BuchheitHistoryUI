@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+@import './app/colors.scss';
+@include mat-core();
+
+
+$buchheit-primary: mat-palette($mat-buchheit-green);
+$buchheit-accent: mat-palette($mat-buchheit-gold);
+$buchheit-theme: mat-light-theme($buchheit-primary, $buchheit-accent, mat-palette($mat-red));
+
+
+
+@include angular-material-theme($buchheit-theme);
+

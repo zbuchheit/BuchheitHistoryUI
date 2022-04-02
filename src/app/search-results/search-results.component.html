@@ -1,0 +1,58 @@
+<div class="suggestion"
+     *ngIf="this.searchResultTableDataSource.data.length === 0">
+     <div> No results found </div>
+</div>
+
+<div class="container">
+<table mat-table *ngIf="searchResultTableDataSource && this.searchResultTableDataSource.data.length > 0"
+  [dataSource]="searchResultTableDataSource" class="mat-elevation-z0 displayTable">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- FirstName Column -->
+  <ng-container matColumnDef="firstname">
+    <th mat-header-cell *matHeaderCellDef> FirstName </th>
+    <td mat-cell *matCellDef="let searchResult"> {{searchResult.givenname}} </td>
+  </ng-container>
+
+  <!-- LastName Column -->
+  <ng-container matColumnDef="lastname">
+    <th mat-header-cell *matHeaderCellDef> LastName </th>
+    <td mat-cell *matCellDef="let searchResult"> {{searchResult.surname}} </td>
+  </ng-container>
+
+  <!-- Dates Column -->
+  <ng-container matColumnDef="dates">
+    <th mat-header-cell *matHeaderCellDef> Dates </th>
+    <td mat-cell *matCellDef="let searchResult">
+      Born: {{searchResult.birthdate}}
+    <div>
+      Died: {{searchResult.deathdate}}
+    </div>
+    </td>
+  </ng-container>
+
+  <!-- Places Column -->
+  <ng-container matColumnDef="birthplace">
+    <th mat-header-cell *matHeaderCellDef> Places </th>
+    <td mat-cell *matCellDef="let searchResult">
+      Birthplace: {{searchResult.birthplace}}
+    <div>
+      Deathplace: {{searchResult.deathplace}}
+    </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                [pageSize]="10"
+                 showFirstLastButtons
+                 aria-label="Select page of people">
+  </mat-paginator>
+</div>
+
+

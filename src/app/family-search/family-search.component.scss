@@ -1,0 +1,19 @@
+.container{
+  display:flex;
+  width:80%;
+  margin: 0 auto;
+  max-width: 15rem;
+}
+.search_button__container{
+ display:flex;
+ justify-content: flex-end;
+ padding-right:.5rem;
+}
+mat-form-field {
+  margin: auto;
+  padding:.5rem;
+}
+button{
+  margin-left: auto;
+}
+

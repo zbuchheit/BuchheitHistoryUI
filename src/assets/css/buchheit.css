@@ -1,0 +1,30 @@
+/* Links colors and decoration for the side navigation */
+a.sidenavLnk:link {color:#003399; text-decoration: none; font-size: 8pt; font-weight: bold}
+a.sidenavLnk:visited {color:#003399; text-decoration: none; font-size: 8pt; font-weight: bold}
+a.sidenavLnk:active {color:#003399; text-decoration: none; font-size: 8pt; font-weight: bold}
+a.sidenavLnk:hover {color:#003399; text-decoration: underline; font-size: 8pt; font-weight: bold}
+
+
+/* Links colors and decoration for everything else */
+a:link {color:#135501; text-decoration: none; font-weight: bold}
+a:visited {color:#135501; text-decoration: none; font-weight: bold}
+a:active {color:#135501; text-decoration: none; font-weight: bold}
+a:hover {color:#135501; text-decoration: underline; font-weight: bold}
+
+.content {text-align: justify;}
+.sidenav  {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt}
+body {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #4D4D4D}
+td	{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #4D4D4D}
+tr	{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #4D4D4D}
+
+p	{
+	padding: 0 15px;
+	color: #000000;
+	line-height: 1.4em;
+	}
+	
+h1	{margin:0; padding: 5px 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:15.5px; color: #003366}
+h2	{margin:0; padding: 5px 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14.5px; color: #003366}
+h3	{margin:0; padding: 5px 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:13.5px; color: #003366}
+h4	{margin:0; padding: 5px 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:10pt; color: #135501}	
+h5	{margin:0; padding: 5px 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:9pt; color: #135501}

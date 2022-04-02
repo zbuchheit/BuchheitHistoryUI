@@ -1,0 +1,62 @@
+$buchheit-green:#135501;
+$buchheit-light-green:#2c8612;
+$buchheit-gold: #e8b607;
+$buchheit-grey: #828684;
+
+$mat-buchheit-green: (
+  50:#e8f3e5,
+  100:#c7e2c1,
+  200:#a4cf99,
+  300: #80be70,
+  400: #66b152,
+  500: #4ca432,
+  600: #43952a,
+  700: #37841f,
+  800: #2b7315,
+  900: #135501,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$mat-buchheit-gold: (
+  50: #fcfce5,
+  100: #f8f6bf,
+  200: #f3f095,
+  300: #eeea6a,
+  400: #ebe548,
+  500: #e8e01f,
+  600: #e8cf18,
+  700: #e8b707,
+  800: #e79f00,
+  900: #e57600,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+)
