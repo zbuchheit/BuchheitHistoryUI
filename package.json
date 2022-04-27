@@ -6,6 +6,7 @@
     "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build --prod",
     "test": "ng test",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "e2e": "ng e2e",
     "lint": "eslint . --ext .ts"
   },
@@ -47,5 +48,6 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "^3.9.9"
-  }
+  },
+  "pre-commit": "test:headless"
 }
